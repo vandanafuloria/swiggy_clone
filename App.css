@@ -1,0 +1,120 @@
+@tailwind utility;
+.logo {
+  width: 50px;
+  border-radius: 10px;
+}
+.carousel-container {
+  margin: 0 auto; /* Center the carousel */
+  padding: 0 1rem;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  position: absolute;
+  right: 2rem;
+}
+
+.carousel-controls button {
+  background: #e7e4e4;
+  margin: 5px;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+.carousel-controls button:hover {
+  background-color: aliceblue;
+}
+
+.carousel {
+  /* Hide non-visible slides */
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row !important; /* Explicitly horizontal */
+  gap: 1rem; /* Matches your original gap */
+  width: 90%;
+  margin: auto;
+  overflow-x: auto; /* Prevent wrapping */
+}
+.top-res {
+  overflow-x: auto;
+  width: 90%;
+  margin: auto;
+}
+.top-res > div {
+  width: 100%;
+  margin: auto;
+  min-width: 270px;
+
+  filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px);
+}
+
+.img-container {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.img-container img {
+  height: 100%;
+}
+.top {
+  transition: ease 0.5s;
+}
+.top:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px gray;
+}
+.carousel-inner > div {
+  text-align: center;
+  display: flex;
+
+  min-width: 100px;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  justify-content: center;
+  box-sizing: border-box; /* Ensure borders don't affect width */
+}
+
+/* Hide scrollbar */
+.carousel-inner::-webkit-scrollbar,
+.top-res::-webkit-scrollbar {
+  display: none;
+}
+.carousel-inner {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hamburger {
+  width: 300px;
+  text-align: center;
+  right: 10px;
+  top: 100px;
+  z-index: 9;
+  background-color: orange;
+}
+.cities > div {
+  transition: ease-in-out 0.5s;
+}
+.cities > div:hover {
+  box-shadow: 0 0 5px gray;
+  transform: scale(1.2);
+}
+.restro {
+  flex-wrap: wrap !important;
+}
+.restro > div {
+  min-width: 250px !important;
+  transition: all ease 0.4s;
+}
+.restro > div:hover {
+  box-shadow: 0 0 10px gray;
+}
+.restro > div img {
+  height: 200px;
+  object-fit: cover;
+}
