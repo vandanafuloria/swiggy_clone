@@ -29,15 +29,15 @@ export default function TopRestaurants({ topRestro }) {
   return (
     <>
       <div className="top-restaurant">
-        <h1 className="text-4xl font-bold pl-5 m-5">
+        <h1 className="text-xl md:2xl font-bold pl-5 m-5">
           Top Restaurant in Your City{" "}
         </h1>
         <div className="">
           <div className="carousel-controls">
-            <button onClick={goToPrevious}>
+            <button onClick={goToPrevious} className="text-xs p-2">
               <i className="fa-solid fa-arrow-left"></i>
             </button>
-            <button onClick={goToNext}>
+            <button onClick={goToNext} className="text-xs p-2">
               <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
